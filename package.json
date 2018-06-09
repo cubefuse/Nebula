@@ -1,0 +1,46 @@
+{
+  "name": "nebula",
+  "version": "1.0.0",
+  "description": "The IPFS client geared towards ease-of-use.",
+  "scripts": {
+    "prestart": "flow",
+    "start": "webpack-dev-server --config ./webpack.dev.js --mode development",
+    "build": "webpack --config ./webpack.prod.js --mode production",
+    "precommit": "pretty-quick --staged",
+    "flow": "flow",
+    "docs": "esdoc",
+    "pretty": "pretty-quick"
+  },
+  "author": "Cubefuse",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "esdoc": "^1.1.0",
+    "esdoc-flow-type-plugin": "^1.1.0",
+    "esdoc-standard-plugin": "^1.0.0",
+    "flow-bin": "^0.74.0",
+    "husky": "^0.14.3",
+    "prettier": "1.13.5",
+    "pretty-quick": "^1.6.0",
+    "react-hot-loader": "^4.0.0",
+    "redux-devtools-extension": "^2.13.2",
+    "webpack": "^4.3.0",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "dependencies": {
+    "ipfs": "^0.29.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-saga": "^0.16.0"
+  }
+}
