@@ -1,0 +1,13 @@
+language: node_js
+node_js: "8"
+cache: yarn
+jobs:
+  include:
+    - stage: type-check
+      script: yarn flow check
+    - stage: build
+      script: yarn build
+    - stage: test
+      script: yarn test
+    - stage: generate docs
+      script: yarn docs
