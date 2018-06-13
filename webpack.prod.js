@@ -23,7 +23,6 @@ module.exports = {
           {
             loader: "less-loader",
             options: {
-              modifyVars: themeVariables,
               javascriptEnabled: true
             }
           }
