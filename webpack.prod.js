@@ -9,7 +9,32 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ['babel-loader']
+        use: ["babel-loader"]
+      },
+      {
+        test: /\.less$/,
+        use: [
+          {
+            loader: "style-loader"
+          },
+          {
+            loader: "css-loader"
+          },
+          {
+            loader: "less-loader",
+            options: {
+              modifyVars: themeVariables,
+              javascriptEnabled: true
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
+        loader: "url-loader",
+        options: {
+          limit: 10000
+        }
       }
     ]
   },
