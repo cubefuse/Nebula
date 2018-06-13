@@ -3,6 +3,8 @@
 
 **A Cubefuse Project.**
 
+[![Build Status](https://travis-ci.com/cubefuse/Nebula.svg?branch=master)](https://travis-ci.com/cubefuse/Nebula)
+
 ### Installation
 
 This project is still in early stages and we do not offer binary

@@ -1,4 +1,5 @@
 import IPFS from "ipfs";
+import Logger from "../util/logger";
 
 export default class IpfsHandler {
   constructor() {
@@ -7,15 +8,15 @@ export default class IpfsHandler {
   }
 
   createNode() {
-    console.log("Starting");
+    Logger.debug("Starting IPFS Node", "api/ipfs");
     return new Promise((resolve, reject) => {
       this.node = new IPFS({ repo: String(Math.random() + Date.now()) });
       this.node.on("ready", () => {
-        console.log("IPFS node is ready");
+        Logger.debug("IPFS node is ready", "api/ipfs");
         resolve();
       });
-      this.node.on("error", e => {
-        console.log("Error", e);
+      this.node.on("error", () => {
+        Logger.error("Error starting IPFS node", "api/ipfs");
         reject();
       });
     });
