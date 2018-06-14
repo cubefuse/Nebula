@@ -4,11 +4,118 @@ exports[`can render with redux with defaults 1`] = `
 Object {
   "container": <div>
     <div
-      style="text-align: center;"
+      class="ant-layout"
     >
-      <h1>
-        Everything is working!
-      </h1>
+      <div
+        class="header ant-layout-header"
+      >
+        <div
+          style="color: white;"
+        >
+          <span
+            style="font-size: x-large; padding-right: 5px;"
+          >
+            Nebula
+          </span>
+          <span
+            style="font-size: large; padding-right: 10px;"
+          >
+            by Cubefuse
+          </span>
+          <span
+            style="font-size: small;"
+          >
+            POC-01
+          </span>
+        </div>
+      </div>
+      <div
+        class="ant-layout-content"
+        style="padding: 0px 50px;"
+      >
+        <div
+          class="ant-breadcrumb"
+          style="margin: 16px 0px;"
+        >
+          <span>
+            <span
+              class="ant-breadcrumb-link"
+            >
+              Home
+            </span>
+            <span
+              class="ant-breadcrumb-separator"
+            >
+              /
+            </span>
+          </span>
+          <span>
+            <span
+              class="ant-breadcrumb-link"
+            >
+              My Files
+            </span>
+            <span
+              class="ant-breadcrumb-separator"
+            >
+              /
+            </span>
+          </span>
+        </div>
+        <div
+          class="ant-layout ant-layout-has-sider"
+          style="padding: 24px 0px; background: rgb(255, 255, 255);"
+        >
+          <div
+            class="ant-layout-sider ant-layout-sider-dark"
+            style="background: rgb(255, 255, 255); max-width: 200px; min-width: 200px; width: 200px;"
+          >
+            <div
+              class="ant-layout-sider-children"
+            >
+              <ul
+                class="ant-menu ant-menu-light ant-menu-root ant-menu-inline"
+                role="menu"
+                style="height: 100%;"
+              >
+                <li
+                  class="ant-menu-item ant-menu-item-selected"
+                  role="menuitem"
+                  style="padding-left: 24px;"
+                >
+                  My Files
+                </li>
+                <li
+                  class="ant-menu-item"
+                  role="menuitem"
+                  style="padding-left: 24px;"
+                >
+                  Trash
+                </li>
+                <li
+                  class="ant-menu-item"
+                  role="menuitem"
+                  style="padding-left: 24px;"
+                >
+                  Shared
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="ant-layout-content"
+            style="padding: 0px 24px; min-height: 280px;"
+          >
+            Content
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-layout-footer"
+        style="text-align: center;"
+      >
+        Copyright © 2018 Cubefuse. Distributed under MIT open-source license.
+      </div>
     </div>
   </div>,
   "debug": [Function],
