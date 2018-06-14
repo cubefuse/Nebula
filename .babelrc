@@ -4,5 +4,8 @@
     "flow",
     "react",
     "stage-2"
+  ],
+  "plugins": [
+    ["import", { "libraryName": "antd", "style": true }]
   ]
 }

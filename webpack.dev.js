@@ -8,6 +8,34 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: ["babel-loader"]
+      },
+      {
+        test: /\.less$/,
+        use: [
+          {
+            loader: "style-loader"
+          },
+          {
+            loader: "css-loader",
+            options: {
+              sourceMap: true
+            }
+          },
+          {
+            loader: "less-loader",
+            options: {
+              sourceMap: true,
+              javascriptEnabled: true
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
+        loader: "url-loader",
+        options: {
+          limit: 10000
+        }
       }
     ]
   },
@@ -34,9 +62,9 @@ module.exports = {
       reasons: false,
       children: false,
       source: false,
-      errors: false,
-      errorDetails: false,
-      warnings: false,
+      errors: true,
+      errorDetails: true,
+      warnings: true,
       publicPath: false
     }
   }
