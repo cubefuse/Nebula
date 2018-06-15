@@ -5,6 +5,7 @@ Object {
   "container": <div>
     <div
       class="ant-layout"
+      style="min-height: 100vh;"
     >
       <div
         class="header ant-layout-header"

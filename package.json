@@ -1,19 +1,25 @@
 {
-  "name": "nebula",
-  "version": "1.0.0",
+  "name": "Nebula",
+  "version": "0.0.1",
   "description": "The IPFS client geared towards ease-of-use.",
+  "author": "Cubefuse",
+  "license": "MIT",
+  "homepage": "https://github.com/cubefuse/nebula",
+  "repository": "github:cubefuse/nebula",
+  "main": "index.html",
   "scripts": {
     "prestart": "flow",
     "start": "webpack-dev-server --config ./webpack.dev.js --mode development",
     "build": "webpack --config ./webpack.prod.js --mode production",
     "test": "jest",
+    "electron": "electron ./src/desktop.js",
+    "electron-toolkit": "electron ./node_modules/electron-toolkit",
+    "compile": "electron-builder",
     "precommit": "pretty-quick && jest",
     "flow": "flow",
     "docs": "esdoc",
     "pretty": "pretty-quick"
   },
-  "author": "Cubefuse",
-  "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
@@ -25,8 +31,11 @@
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "chai": "^4.1.2",
     "css-loader": "^0.28.11",
     "electron": "^2.0.2",
+    "electron-builder": "^20.15.1",
+    "electron-toolkit": "^1.0.24",
     "esdoc": "^1.1.0",
     "esdoc-flow-type-plugin": "^1.1.0",
     "esdoc-standard-plugin": "^1.0.0",
@@ -59,9 +68,28 @@
   },
   "jest": {
     "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
-      "<rootDir>/src/__mocks__/fileMock.js",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__mocks__/fileMock.js",
       "\\.(css|less)$": "<rootDir>/src/__mocks__/styleMock.js"
+    }
+  },
+  "build": {
+    "appId": "com.electron.nebula",
+    "copyright": "Copyright © 2018 Cubefuse",
+    "productName": "Nebula",
+    "electronVersion": "2.0.2",
+    "asar": true,
+    "directories": {
+      "output": "dist"
+    },
+    "linux": {
+      "target": [
+        {
+          "target": "AppImage",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
     }
   }
 }

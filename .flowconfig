@@ -1,4 +1,9 @@
 [ignore]
+; Ignore datastore libraries due to errors
+<PROJECT_ROOT>/node_modules/interface-datastore/**
+<PROJECT_ROOT>/node_modules/datastore-level/**
+<PROJECT_ROOT>/node_modules/datastore-fs/**
+<PROJECT_ROOT>/node_modules/datastore-core/**
 
 [include]
 
