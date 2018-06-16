@@ -1,38 +1,65 @@
+// @flow
 import React from "react";
-import { connect } from "react-redux";
 import { Layout } from "antd";
 import { Switch } from "react-router";
 import { createIpfsInstance } from "./redux/ipfs.redux";
 import AppHeader from "./components/common/AppHeader";
 import AppFooter from "./components/common/AppFooter";
 import BreadcrumbsBar from "./components/common/BreadcrumbsBar";
-import { Redirect, Route, withRouter } from "react-router-dom";
+import { Redirect, Route } from "react-router-dom";
 import DownloadPageContainer from "./containers/DownloadPageContainer";
 import FileExplorerContainer from "./containers/FileExplorerContainer";
-import Error404 from "./components/errors/Error404";
+import Error404 from "./components/statuses/Error404";
+import Loading from "./components/statuses/Loading";
+import Error500 from "./components/statuses/Error500";
 
 const { Content } = Layout;
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
+type Props = {
+  dispatch: any,
+  ipfs: any
+};
 
-    props.dispatch(createIpfsInstance());
+class App extends React.Component<Props> {
+  renderRoute() {
+    const routes = (
+      <Switch>
+        <Route exact path="/" component={FileExplorerContainer} />
+        <Route path="/loading" component={Loading} />
+        <Route path="/get/:hash" component={DownloadPageContainer} />
+        <Route path="/404" component={Error404} />
+        <Redirect to="/404" />
+      </Switch>
+    );
+
+    switch (this.props.ipfs.connState) {
+      case "offline":
+        return <Loading message="Loading the app" />;
+      case "connecting":
+        return <Loading message="Connecting to IPFS Network" />;
+      case "connected":
+        return routes;
+      case "failed":
+        return <Error500 error="Failed to connect to IPFS." />;
+      default:
+        return <Error500 error="Unknown IPFS State." />;
+    }
+  }
+
+  componentDidMount() {
+    this.props.dispatch(createIpfsInstance());
   }
 
   render() {
     return (
       <Layout style={{ minHeight: "100vh" }}>
         <AppHeader />
-        <Content style={{ padding: "0 50px" }}>
+        <Content style={{ padding: "0 24px" }}>
           <BreadcrumbsBar />
-          <Layout style={{ padding: "24px 0", background: "#fff" }}>
-            <Switch>
-              <Route exact path="/" component={FileExplorerContainer} />
-              <Route path="/get" component={DownloadPageContainer} />
-              <Route path="/404" component={Error404} />
-              <Redirect to="/404" />
-            </Switch>
+          <Layout
+            style={{ padding: "24px 0", background: "#fff", height: "100%" }}
+          >
+            {this.renderRoute()}
           </Layout>
         </Content>
         <AppFooter />
@@ -41,4 +68,4 @@ class App extends React.Component {
   }
 }
 
-export default withRouter(connect()(App));
+export default App;

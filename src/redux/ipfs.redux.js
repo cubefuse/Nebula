@@ -6,12 +6,12 @@ import Logger from "../util/logger";
 const IPFS = new IpfsHandler();
 
 // State Type Definitions
-type State = {
+type ipfsState = {
   +connState: string
 };
 
 // Initial State
-const initialState: State = {
+const initialState: ipfsState = {
   connState: "offline"
 };
 
@@ -30,9 +30,9 @@ type Action = { type: "nebula/ipfs/CREATE_INSTANCE" };
 
 // Reducer
 export default function reducer(
-  state: State = initialState,
+  state: ipfsState = initialState,
   action: Action
-): State {
+): ipfsState {
   switch (action.type) {
     case CREATE_INSTANCE:
       return { connState: "connecting" };

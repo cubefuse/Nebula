@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import App from "./App";
+import AppContainer from "./AppContainer";
 import configureStore from "./configureStore";
 
 // We are using HashRouter as BrowserRouter does not work on IPFS.
@@ -19,7 +19,7 @@ const store = configureStore();
 ReactDOM.render(
   <Provider store={store}>
     <Router>
-      <App />
+      <AppContainer />
     </Router>
   </Provider>,
   document.getElementById("app")

@@ -1,11 +1,18 @@
+// @flow
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import { Breadcrumb } from "antd";
 
+type Props = {
+  location: any
+};
+
 /**
  * App Breadcrumbs bar.
  */
-class BreadcrumbsBar extends React.Component {
+class BreadcrumbsBar extends React.Component<Props> {
+  breadcrumbNameMap: { [path: string]: string };
+
   constructor(props) {
     super(props);
 
