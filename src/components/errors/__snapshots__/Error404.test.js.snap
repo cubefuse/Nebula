@@ -4,33 +4,19 @@ exports[`can render 1`] = `
 Object {
   "container": <div>
     <div
-      class="ant-breadcrumb"
-      style="margin: 16px 0px;"
+      class="ant-layout-content"
+      style="text-align: center;"
     >
-      <span>
-        <span
-          class="ant-breadcrumb-link"
-        >
-          Home
-        </span>
-        <span
-          class="ant-breadcrumb-separator"
-        >
-          /
-        </span>
-      </span>
-      <span>
-        <span
-          class="ant-breadcrumb-link"
-        >
-          My Files
-        </span>
-        <span
-          class="ant-breadcrumb-separator"
-        >
-          /
-        </span>
-      </span>
+      <h1
+        style="font-size: 10em; margin-bottom: 0px;"
+      >
+        404
+      </h1>
+      <h2
+        style="font-size: xx-large; color: gray;"
+      >
+        The page you're looking for could not be found.
+      </h2>
     </div>
   </div>,
   "debug": [Function],
