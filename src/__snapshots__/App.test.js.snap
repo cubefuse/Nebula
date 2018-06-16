@@ -5,6 +5,7 @@ Object {
   "container": <div>
     <div
       class="ant-layout"
+      style="min-height: 100vh;"
     >
       <div
         class="header ant-layout-header"
@@ -15,12 +16,14 @@ Object {
           <span
             style="font-size: x-large; padding-right: 5px;"
           >
-            Nebula
+            <strong>
+              Nebula
+            </strong>
           </span>
           <span
             style="font-size: large; padding-right: 10px;"
           >
-            by Cubefuse
+            Web UI
           </span>
           <span
             style="font-size: small;"
@@ -66,47 +69,48 @@ Object {
           class="ant-layout ant-layout-has-sider"
           style="padding: 24px 0px; background: rgb(255, 255, 255);"
         >
-          <div
-            class="ant-layout-sider ant-layout-sider-dark"
-            style="background: rgb(255, 255, 255); max-width: 200px; min-width: 200px; width: 200px;"
-          >
+          <div>
             <div
-              class="ant-layout-sider-children"
+              class="ant-layout-content"
+              style="padding: 0px 24px; min-height: 280px;"
             >
-              <ul
-                class="ant-menu ant-menu-light ant-menu-root ant-menu-inline"
-                role="menu"
-                style="height: 100%;"
+              <div
+                class="ant-layout-sider ant-layout-sider-dark"
+                style="background: rgb(255, 255, 255); max-width: 200px; min-width: 200px; width: 200px;"
               >
-                <li
-                  class="ant-menu-item ant-menu-item-selected"
-                  role="menuitem"
-                  style="padding-left: 24px;"
+                <div
+                  class="ant-layout-sider-children"
                 >
-                  My Files
-                </li>
-                <li
-                  class="ant-menu-item"
-                  role="menuitem"
-                  style="padding-left: 24px;"
-                >
-                  Trash
-                </li>
-                <li
-                  class="ant-menu-item"
-                  role="menuitem"
-                  style="padding-left: 24px;"
-                >
-                  Shared
-                </li>
-              </ul>
+                  <ul
+                    class="ant-menu ant-menu-light ant-menu-root ant-menu-inline"
+                    role="menu"
+                    style="height: 100%;"
+                  >
+                    <li
+                      class="ant-menu-item ant-menu-item-selected"
+                      role="menuitem"
+                      style="padding-left: 24px;"
+                    >
+                      My Files
+                    </li>
+                    <li
+                      class="ant-menu-item"
+                      role="menuitem"
+                      style="padding-left: 24px;"
+                    >
+                      Trash
+                    </li>
+                    <li
+                      class="ant-menu-item"
+                      role="menuitem"
+                      style="padding-left: 24px;"
+                    >
+                      Shared
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-          </div>
-          <div
-            class="ant-layout-content"
-            style="padding: 0px 24px; min-height: 280px;"
-          >
-            Content
           </div>
         </div>
       </div>
@@ -114,7 +118,7 @@ Object {
         class="ant-layout-footer"
         style="text-align: center;"
       >
-        Copyright © 2018 Cubefuse. Distributed under MIT open-source license.
+        Copyright © 2018 Cubefuse. Distributed under MIT license.
       </div>
     </div>
   </div>,

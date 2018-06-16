@@ -1,8 +1,8 @@
 import { createStore } from "redux";
-import React from "react";
+import * as React from "react";
 import { Provider } from "react-redux";
 import { render } from "react-testing-library";
-import rootReducer from '../redux';
+import rootReducer from "../redux";
 
 /**
  * Helper functions for testing.
@@ -15,10 +15,13 @@ export default class TestHelpers {
    * @param store - A custom store to use when rendering
    * @returns component with Redux store
    */
-  static renderWithRedux(ui, {initialState, store = createStore(rootReducer, initialState)} = {}) {
+  static renderWithRedux(
+    ui,
+    { initialState, store = createStore(rootReducer, initialState) } = {}
+  ) {
     return {
       ...render(<Provider store={store}>{ui}</Provider>),
-      store,
-    }
+      store
+    };
   }
 }

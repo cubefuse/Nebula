@@ -1,5 +1,5 @@
 {
-  "name": "nebula",
+  "name": "nebula-web",
   "version": "1.0.0",
   "description": "The IPFS client geared towards ease-of-use.",
   "scripts": {
@@ -26,7 +26,6 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^0.28.11",
-    "electron": "^2.0.2",
     "esdoc": "^1.1.0",
     "esdoc-flow-type-plugin": "^1.1.0",
     "esdoc-standard-plugin": "^1.0.0",
@@ -50,17 +49,19 @@
   "dependencies": {
     "antd": "^3.6.2",
     "debug": "^3.1.0",
+    "history": "^4.7.2",
     "ipfs": "^0.29.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.7",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
     "redux": "^4.0.0",
     "redux-saga": "^0.16.0"
   },
   "jest": {
     "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
-      "<rootDir>/src/__mocks__/fileMock.js",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__mocks__/fileMock.js",
       "\\.(css|less)$": "<rootDir>/src/__mocks__/styleMock.js"
     }
   }
