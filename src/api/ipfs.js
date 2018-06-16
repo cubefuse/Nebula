@@ -1,12 +1,19 @@
 import IPFS from "ipfs";
 import Logger from "../util/logger";
 
+/**
+ * Used to interact with the JS-IPFS API
+ */
 export default class IpfsHandler {
   constructor() {
     this.node = null;
     this.createNode = this.createNode.bind(this);
   }
 
+  /**
+   * Starts a new IPFS node.
+   * @returns {Promise<any>} A promise that resolves to a new IPFS node. Would reject on failure.
+   */
   createNode() {
     Logger.debug("Starting IPFS Node", "api/ipfs");
     return new Promise((resolve, reject) => {

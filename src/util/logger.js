@@ -1,4 +1,5 @@
-import debug from 'debug';
+// @flow
+import debug from "debug";
 
 /**
  * Simple logger with .
@@ -16,10 +17,10 @@ export default class Logger {
    */
   static BASE = "nebula";
   static COLORS = {
-    trace: 'gray',
-    info: 'black',
-    warn: 'cyan',
-    error: 'red'
+    trace: "gray",
+    info: "black",
+    warn: "cyan",
+    error: "red"
   };
 
   /**
@@ -28,13 +29,20 @@ export default class Logger {
    * @param level - Log level of the message
    * @param source - Source of the log.
    */
-  static log(message: string, level: "info" | "trace" | "warn" | "error", source: ?string) {
+  static log(
+    message: string,
+    level: "info" | "trace" | "warn" | "error",
+    source: ?string
+  ) {
     const namespace = `${this.BASE}:${level.toUpperCase()}`;
     const createDebug = debug(namespace);
 
     createDebug.color = this.COLORS[level];
-    if(source) { createDebug(source, message); }
-    else { createDebug(message); }
+    if (source) {
+      createDebug(source, message);
+    } else {
+      createDebug(message);
+    }
   }
 
   /**

@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`can render 1`] = `
+Object {
+  "container": <div>
+    <div
+      class="ant-layout-sider ant-layout-sider-dark"
+      style="background: rgb(255, 255, 255); max-width: 200px; min-width: 200px; width: 200px;"
+    >
+      <div
+        class="ant-layout-sider-children"
+      >
+        <ul
+          class="ant-menu ant-menu-light ant-menu-root ant-menu-inline"
+          role="menu"
+          style="height: 100%;"
+        >
+          <li
+            class="ant-menu-item ant-menu-item-selected"
+            role="menuitem"
+            style="padding-left: 24px;"
+          >
+            My Files
+          </li>
+          <li
+            class="ant-menu-item"
+            role="menuitem"
+            style="padding-left: 24px;"
+          >
+            Trash
+          </li>
+          <li
+            class="ant-menu-item"
+            role="menuitem"
+            style="padding-left: 24px;"
+          >
+            Shared
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
