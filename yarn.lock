@@ -3341,10 +3341,6 @@ esdoc-external-ecmascript-plugin@^1.0.0:
   dependencies:
     fs-extra "1.0.0"
 
-esdoc-flow-type-plugin@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/esdoc-flow-type-plugin/-/esdoc-flow-type-plugin-1.1.0.tgz#57acfd316c37377ab83162c39bce346530d5e08c"
-
 esdoc-integrate-manual-plugin@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/esdoc-integrate-manual-plugin/-/esdoc-integrate-manual-plugin-1.0.0.tgz#1854a6aa1c081035d7c8c51e3bdd4fb65aa4711c"
@@ -3886,10 +3882,6 @@ flatmap@0.0.3:
 flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
-
-flow-bin@^0.74.0:
-  version "0.74.0"
-  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.74.0.tgz#8017bb00efb37cbe8d81fbb7f464038bde06adc9"
 
 flow-parser@^0.*:
   version "0.74.0"

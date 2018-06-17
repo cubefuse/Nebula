@@ -1,4 +1,4 @@
-// @flow
+//
 import debug from "debug";
 
 /**
@@ -29,11 +29,7 @@ export default class Logger {
    * @param level - Log level of the message
    * @param source - Source of the log.
    */
-  static log(
-    message: string,
-    level: "info" | "trace" | "warn" | "error",
-    source: ?string
-  ) {
+  static log(message, level, source) {
     const namespace = `${this.BASE}:${level.toUpperCase()}`;
     const createDebug = debug(namespace);
 
@@ -50,7 +46,7 @@ export default class Logger {
    * @param errorMsg - The error to log.
    * @param source - Source of the log.
    */
-  static error(errorMsg: string, source: ?string) {
+  static error(errorMsg, source) {
     this.log(errorMsg, "error", source);
   }
 
@@ -59,7 +55,7 @@ export default class Logger {
    * @param warningMsg - The warning to log.
    * @param source - Source of the log.
    */
-  static warn(warningMsg: string, source: ?string) {
+  static warn(warningMsg, source) {
     this.log(warningMsg, "warn", source);
   }
 
@@ -68,7 +64,7 @@ export default class Logger {
    * @param infoMsg - The information to log.
    * @param source - Source of the log.
    */
-  static info(infoMsg: string, source: ?string) {
+  static info(infoMsg, source) {
     this.log(infoMsg, "info", source);
   }
 
@@ -77,7 +73,7 @@ export default class Logger {
    * @param debugMsg - The debug message to log.
    * @param source - Source of the log.
    */
-  static debug(debugMsg: string, source: ?string) {
+  static debug(debugMsg, source) {
     this.log(debugMsg, "trace", source);
   }
 }

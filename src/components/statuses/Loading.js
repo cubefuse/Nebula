@@ -1,17 +1,13 @@
-// @flow
+//
 import React from "react";
 import { Layout, Spin } from "antd";
 
 const { Content } = Layout;
 
-type Props = {
-  message?: string
-};
-
 /**
  * Loading indicator full-page component.
  */
-export default class Loading extends React.Component<Props> {
+export default class Loading extends React.Component {
   render() {
     return (
       <Content style={{ textAlign: "center" }}>

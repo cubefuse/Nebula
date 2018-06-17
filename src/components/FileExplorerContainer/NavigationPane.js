@@ -1,4 +1,4 @@
-// @flow
+//
 import React from "react";
 import { Layout, Menu } from "antd";
 
@@ -7,7 +7,7 @@ const { Sider } = Layout;
 /**
  * File explorer left navigation pane.
  */
-export default class NavigationPane extends React.Component<{}> {
+export default class NavigationPane extends React.Component {
   render() {
     return (
       <Sider width={200} style={{ background: "#fff" }}>

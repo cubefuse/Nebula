@@ -1,31 +1,23 @@
-// @flow
 import React from "react";
 import { Layout } from "antd";
 import { Switch } from "react-router";
-import { createIpfsInstance } from "./redux/ipfs.redux";
-import AppHeader from "./components/common/AppHeader";
-import AppFooter from "./components/common/AppFooter";
-import BreadcrumbsBar from "./components/common/BreadcrumbsBar";
+import AppHeader from "./common/AppHeader";
+import AppFooter from "./common/AppFooter";
+import BreadcrumbsBar from "./common/BreadcrumbsBar";
 import { Redirect, Route } from "react-router-dom";
-import DownloadPageContainer from "./containers/DownloadPageContainer";
-import FileExplorerContainer from "./containers/FileExplorerContainer";
-import Error404 from "./components/statuses/Error404";
-import Loading from "./components/statuses/Loading";
-import Error500 from "./components/statuses/Error500";
+import DownloadPageContainer from "../containers/DownloadPageContainer";
+import FileExplorerContainer from "../containers/FileExplorerContainer";
+import Error404 from "./statuses/Error404";
+import Loading from "./statuses/Loading";
+import Error500 from "./statuses/Error500";
 
 const { Content } = Layout;
 
-type Props = {
-  dispatch: any,
-  ipfs: any
-};
-
-class App extends React.Component<Props> {
+class App extends React.Component {
   renderRoute() {
     const routes = (
       <Switch>
         <Route exact path="/" component={FileExplorerContainer} />
-        <Route path="/loading" component={Loading} />
         <Route path="/get/:hash" component={DownloadPageContainer} />
         <Route path="/404" component={Error404} />
         <Redirect to="/404" />
@@ -47,7 +39,7 @@ class App extends React.Component<Props> {
   }
 
   componentDidMount() {
-    this.props.dispatch(createIpfsInstance());
+    this.props.createIpfsInstance();
   }
 
   render() {

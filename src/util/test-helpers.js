@@ -3,6 +3,7 @@ import * as React from "react";
 import { Provider } from "react-redux";
 import { render } from "react-testing-library";
 import rootReducer from "../redux";
+import { HashRouter as Router } from "react-router-dom";
 
 /**
  * Helper functions for testing.
@@ -23,5 +24,21 @@ export default class TestHelpers {
       ...render(<Provider store={store}>{ui}</Provider>),
       store
     };
+  }
+
+  /**
+   * Render a component with React Router.
+   * @param ui - Component to render with React Router
+   * @returns component rendered with React router
+   */
+  static renderWithRouter(ui) {
+    return render(<Router>{ui}</Router>);
+  }
+
+  static renderWithRouterAndRedux(
+    ui,
+    { initialState, store = createStore(rootReducer, initialState) } = {}
+  ) {
+    return this.renderWithRedux(<Router>{ui}</Router>, { initialState, store });
   }
 }

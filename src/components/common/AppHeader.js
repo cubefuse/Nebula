@@ -1,4 +1,4 @@
-// @flow
+//
 import React from "react";
 import { Layout } from "antd";
 
@@ -7,7 +7,7 @@ const { Header } = Layout;
 /**
  * App Header component. Contains the top bar.
  */
-export default class AppHeader extends React.Component<{}> {
+export default class AppHeader extends React.Component {
   render() {
     return (
       <Header className="header">

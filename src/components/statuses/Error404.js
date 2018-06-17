@@ -1,4 +1,4 @@
-// @flow
+//
 import React from "react";
 import { Layout } from "antd";
 
@@ -7,7 +7,7 @@ const { Content } = Layout;
 /**
  * 404 page not found error page.
  */
-export default class Error404 extends React.Component<{}> {
+export default class Error404 extends React.Component {
   render() {
     return (
       <Content style={{ textAlign: "center" }}>

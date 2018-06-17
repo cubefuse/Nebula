@@ -1,4 +1,4 @@
-// @flow
+//
 import { takeLatest, call, put } from "redux-saga/effects";
 import IpfsHandler from "../api/ipfs";
 import Logger from "../util/logger";
@@ -6,12 +6,9 @@ import Logger from "../util/logger";
 const IPFS = new IpfsHandler();
 
 // State Type Definitions
-type ipfsState = {
-  +connState: string
-};
 
 // Initial State
-const initialState: ipfsState = {
+const initialState = {
   connState: "offline"
 };
 
@@ -26,13 +23,9 @@ export function createIpfsInstance() {
 }
 
 // Action Creator Type Definitions
-type Action = { type: "nebula/ipfs/CREATE_INSTANCE" };
 
 // Reducer
-export default function reducer(
-  state: ipfsState = initialState,
-  action: Action
-): ipfsState {
+export default function reducer(state = initialState, action) {
   switch (action.type) {
     case CREATE_INSTANCE:
       return { connState: "connecting" };
@@ -46,11 +39,11 @@ export default function reducer(
 }
 
 // side effects
-export function* createIpfsInstanceWatcher(): any {
+export function* createIpfsInstanceWatcher() {
   yield takeLatest(CREATE_INSTANCE, createIpfsInstanceWorker);
 }
 
-export function* createIpfsInstanceWorker(): any {
+export function* createIpfsInstanceWorker() {
   try {
     yield call(IPFS.createNode);
     yield put({ type: CREATE_INSTANCE_SUCCESS });

@@ -1,0 +1,525 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Connecting to network indicator gets shown 1`] = `
+Object {
+  "container": <div>
+    <div
+      class="ant-layout"
+      style="min-height: 100vh;"
+    >
+      <div
+        class="header ant-layout-header"
+      >
+        <div
+          style="color: white;"
+        >
+          <span
+            style="font-size: x-large; padding-right: 5px;"
+          >
+            <strong>
+              Nebula
+            </strong>
+          </span>
+          <span
+            style="font-size: large; padding-right: 10px;"
+          >
+            Web UI
+          </span>
+          <span
+            style="font-size: small;"
+          >
+            POC-01
+          </span>
+        </div>
+      </div>
+      <div
+        class="ant-layout-content"
+        style="padding: 0px 24px;"
+      >
+        <div
+          class="ant-breadcrumb"
+          style="margin: 16px 0px;"
+        >
+          <span>
+            <span
+              class="ant-breadcrumb-link"
+            >
+              <a
+                href="#/"
+              >
+                Home
+              </a>
+            </span>
+            <span
+              class="ant-breadcrumb-separator"
+            >
+              /
+            </span>
+          </span>
+        </div>
+        <div
+          class="ant-layout"
+          style="padding: 24px 0px; background: rgb(255, 255, 255); height: 100%;"
+        >
+          <div
+            class="ant-layout-content"
+            style="text-align: center;"
+          >
+            <div
+              class="ant-spin ant-spin-lg ant-spin-spinning"
+            >
+              <span
+                class="ant-spin-dot ant-spin-dot-spin"
+              >
+                <i />
+                <i />
+                <i />
+                <i />
+              </span>
+            </div>
+            <h1
+              style="font-size: xx-large; color: gray;"
+            >
+              Connecting to IPFS Network
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-layout-footer"
+        style="text-align: center;"
+      >
+        Copyright © 2018 Cubefuse. Distributed under MIT license.
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Failed to connect error gets shown 1`] = `
+Object {
+  "container": <div>
+    <div
+      class="ant-layout"
+      style="min-height: 100vh;"
+    >
+      <div
+        class="header ant-layout-header"
+      >
+        <div
+          style="color: white;"
+        >
+          <span
+            style="font-size: x-large; padding-right: 5px;"
+          >
+            <strong>
+              Nebula
+            </strong>
+          </span>
+          <span
+            style="font-size: large; padding-right: 10px;"
+          >
+            Web UI
+          </span>
+          <span
+            style="font-size: small;"
+          >
+            POC-01
+          </span>
+        </div>
+      </div>
+      <div
+        class="ant-layout-content"
+        style="padding: 0px 24px;"
+      >
+        <div
+          class="ant-breadcrumb"
+          style="margin: 16px 0px;"
+        >
+          <span>
+            <span
+              class="ant-breadcrumb-link"
+            >
+              <a
+                href="#/"
+              >
+                Home
+              </a>
+            </span>
+            <span
+              class="ant-breadcrumb-separator"
+            >
+              /
+            </span>
+          </span>
+        </div>
+        <div
+          class="ant-layout"
+          style="padding: 24px 0px; background: rgb(255, 255, 255); height: 100%;"
+        >
+          <div
+            class="ant-layout-content"
+            style="text-align: center;"
+          >
+            <h1
+              style="font-size: 10em; margin-bottom: 0px;"
+            >
+              500
+            </h1>
+            <h2
+              style="font-size: xx-large; color: gray;"
+            >
+              Ouch! This application has crashed.
+            </h2>
+            <p>
+              Debug: 
+              Failed to connect to IPFS.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-layout-footer"
+        style="text-align: center;"
+      >
+        Copyright © 2018 Cubefuse. Distributed under MIT license.
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Loading the app indicator gets shown 1`] = `
+Object {
+  "container": <div>
+    <div
+      class="ant-layout"
+      style="min-height: 100vh;"
+    >
+      <div
+        class="header ant-layout-header"
+      >
+        <div
+          style="color: white;"
+        >
+          <span
+            style="font-size: x-large; padding-right: 5px;"
+          >
+            <strong>
+              Nebula
+            </strong>
+          </span>
+          <span
+            style="font-size: large; padding-right: 10px;"
+          >
+            Web UI
+          </span>
+          <span
+            style="font-size: small;"
+          >
+            POC-01
+          </span>
+        </div>
+      </div>
+      <div
+        class="ant-layout-content"
+        style="padding: 0px 24px;"
+      >
+        <div
+          class="ant-breadcrumb"
+          style="margin: 16px 0px;"
+        >
+          <span>
+            <span
+              class="ant-breadcrumb-link"
+            >
+              <a
+                href="#/"
+              >
+                Home
+              </a>
+            </span>
+            <span
+              class="ant-breadcrumb-separator"
+            >
+              /
+            </span>
+          </span>
+        </div>
+        <div
+          class="ant-layout"
+          style="padding: 24px 0px; background: rgb(255, 255, 255); height: 100%;"
+        >
+          <div
+            class="ant-layout-content"
+            style="text-align: center;"
+          >
+            <div
+              class="ant-spin ant-spin-lg ant-spin-spinning"
+            >
+              <span
+                class="ant-spin-dot ant-spin-dot-spin"
+              >
+                <i />
+                <i />
+                <i />
+                <i />
+              </span>
+            </div>
+            <h1
+              style="font-size: xx-large; color: gray;"
+            >
+              Loading the app
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-layout-footer"
+        style="text-align: center;"
+      >
+        Copyright © 2018 Cubefuse. Distributed under MIT license.
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`can render with mock data 1`] = `
+Object {
+  "container": <div>
+    <div
+      class="ant-layout"
+      style="min-height: 100vh;"
+    >
+      <div
+        class="header ant-layout-header"
+      >
+        <div
+          style="color: white;"
+        >
+          <span
+            style="font-size: x-large; padding-right: 5px;"
+          >
+            <strong>
+              Nebula
+            </strong>
+          </span>
+          <span
+            style="font-size: large; padding-right: 10px;"
+          >
+            Web UI
+          </span>
+          <span
+            style="font-size: small;"
+          >
+            POC-01
+          </span>
+        </div>
+      </div>
+      <div
+        class="ant-layout-content"
+        style="padding: 0px 24px;"
+      >
+        <div
+          class="ant-breadcrumb"
+          style="margin: 16px 0px;"
+        >
+          <span>
+            <span
+              class="ant-breadcrumb-link"
+            >
+              <a
+                href="#/"
+              >
+                Home
+              </a>
+            </span>
+            <span
+              class="ant-breadcrumb-separator"
+            >
+              /
+            </span>
+          </span>
+        </div>
+        <div
+          class="ant-layout ant-layout-has-sider"
+          style="padding: 24px 0px; background: rgb(255, 255, 255); height: 100%;"
+        >
+          <div
+            class="ant-layout-content"
+            style="padding: 0px 24px; min-height: 280px;"
+          >
+            <div
+              class="ant-layout-sider ant-layout-sider-dark"
+              style="background: rgb(255, 255, 255); max-width: 200px; min-width: 200px; width: 200px;"
+            >
+              <div
+                class="ant-layout-sider-children"
+              >
+                <ul
+                  class="ant-menu ant-menu-light ant-menu-root ant-menu-inline"
+                  role="menu"
+                  style="height: 100%;"
+                >
+                  <li
+                    class="ant-menu-item ant-menu-item-selected"
+                    role="menuitem"
+                    style="padding-left: 24px;"
+                  >
+                    My Files
+                  </li>
+                  <li
+                    class="ant-menu-item"
+                    role="menuitem"
+                    style="padding-left: 24px;"
+                  >
+                    Trash
+                  </li>
+                  <li
+                    class="ant-menu-item"
+                    role="menuitem"
+                    style="padding-left: 24px;"
+                  >
+                    Shared
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-layout-footer"
+        style="text-align: center;"
+      >
+        Copyright © 2018 Cubefuse. Distributed under MIT license.
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
