@@ -1,9 +1,9 @@
 import React from "react";
 import "jest-dom/extend-expect";
-import { render } from "react-testing-library";
 import BreadcrumbsBar from "./BreadcrumbsBar";
+import TestHelpers from "../../util/test-helpers";
 
-test.skip("can render", () => {
-  const node = render(<BreadcrumbsBar />);
+test("can render with Router", () => {
+  const node = TestHelpers.renderWithRouter(<BreadcrumbsBar />);
   expect(node).toMatchSnapshot();
 });

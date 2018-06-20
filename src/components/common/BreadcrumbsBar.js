@@ -20,11 +20,11 @@ class BreadcrumbsBar extends React.Component {
   render() {
     const pathSnippets = this.props.location.pathname.split("/").filter(i => i);
 
-    const breadcrumbSubItems = pathSnippets.map((_, index) => {
+    const breadcrumbSubItems = pathSnippets.map((raw, index) => {
       const url = `/${pathSnippets.slice(0, index + 1).join("/")}`;
       return (
         <Breadcrumb.Item key={url}>
-          <Link to={url}>{this.breadcrumbNameMap[url]}</Link>
+          <Link to={url}>{this.breadcrumbNameMap[url] || raw}</Link>
         </Breadcrumb.Item>
       );
     });

@@ -1,7 +1,7 @@
 //
 import React from "react";
 import { Layout } from "antd";
-import NavigationPane from "../components/FileExplorerContainer/NavigationPane";
+import NavigationPane from "../components/FileExplorer/NavigationPane";
 
 const { Content } = Layout;
 

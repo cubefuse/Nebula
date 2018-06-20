@@ -1,5 +1,6 @@
 //
 import React from "react";
+import PropTypes from "prop-types";
 import { Layout } from "antd";
 
 const { Content } = Layout;
@@ -21,4 +22,8 @@ export default class Error500 extends React.Component {
       </Content>
     );
   }
+
+  static propTypes = {
+    error: PropTypes.string
+  };
 }

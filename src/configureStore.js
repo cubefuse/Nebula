@@ -3,7 +3,7 @@ import { composeWithDevTools } from "redux-devtools-extension";
 import createSagaMiddleware from "redux-saga";
 import createHistory from "history/createHashHistory";
 import rootReducer from "./redux";
-import { createIpfsInstanceWatcher } from "./redux/ipfs.redux";
+import { ipfsWatchers } from "./redux/ipfs.redux";
 
 export const history = createHistory();
 
@@ -19,7 +19,7 @@ export default function configureStore() {
   );
 
   // Start the Redux Saga watchers
-  sagaMiddleware.run(createIpfsInstanceWatcher);
+  sagaMiddleware.run(ipfsWatchers);
 
   return store;
 }

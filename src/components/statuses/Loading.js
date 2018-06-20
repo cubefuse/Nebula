@@ -1,5 +1,6 @@
 //
 import React from "react";
+import PropTypes from "prop-types";
 import { Layout, Spin } from "antd";
 
 const { Content } = Layout;
@@ -18,4 +19,8 @@ export default class Loading extends React.Component {
       </Content>
     );
   }
+
+  static propTypes = {
+    message: PropTypes.string
+  };
 }

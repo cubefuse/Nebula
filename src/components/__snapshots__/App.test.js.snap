@@ -26,10 +26,20 @@ Object {
             Web UI
           </span>
           <span
-            style="font-size: small;"
+            style="font-size: small; padding-right: 10px;"
           >
             POC-01
           </span>
+          <span
+            style="font-size: small; padding-right: 5px;"
+          />
+          <div
+            style="float: right; font-size: 16px;"
+          >
+            <i
+              class="anticon anticon-info-circle-o"
+            />
+          </div>
         </div>
       </div>
       <div
@@ -153,10 +163,20 @@ Object {
             Web UI
           </span>
           <span
-            style="font-size: small;"
+            style="font-size: small; padding-right: 10px;"
           >
             POC-01
           </span>
+          <span
+            style="font-size: small; padding-right: 5px;"
+          />
+          <div
+            style="float: right; font-size: 16px;"
+          >
+            <i
+              class="anticon anticon-info-circle-o"
+            />
+          </div>
         </div>
       </div>
       <div
@@ -277,10 +297,20 @@ Object {
             Web UI
           </span>
           <span
-            style="font-size: small;"
+            style="font-size: small; padding-right: 10px;"
           >
             POC-01
           </span>
+          <span
+            style="font-size: small; padding-right: 5px;"
+          />
+          <div
+            style="float: right; font-size: 16px;"
+          >
+            <i
+              class="anticon anticon-info-circle-o"
+            />
+          </div>
         </div>
       </div>
       <div
@@ -404,10 +434,26 @@ Object {
             Web UI
           </span>
           <span
-            style="font-size: small;"
+            style="font-size: small; padding-right: 10px;"
           >
             POC-01
           </span>
+          <span
+            style="font-size: small; padding-right: 5px;"
+          >
+            <strong>
+              Peers
+            </strong>
+            : 
+            0
+          </span>
+          <div
+            style="float: right; font-size: 16px;"
+          >
+            <i
+              class="anticon anticon-info-circle-o"
+            />
+          </div>
         </div>
       </div>
       <div

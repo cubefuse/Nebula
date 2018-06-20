@@ -2,10 +2,16 @@ import React from "react";
 import "jest-dom/extend-expect";
 import App from "./App";
 import TestHelpers from "../util/test-helpers";
-import { createIpfsInstance } from "../redux/ipfs.redux";
 
 const mockIpfsState = {
-  connState: "connected"
+  connState: "connected",
+  stats: {
+    state: "loaded",
+    data: {
+      identity: {},
+      peers: []
+    }
+  }
 };
 
 test("can render with mock data", () => {
@@ -18,12 +24,14 @@ test("can render with mock data", () => {
 test("createIpfsInstance function gets called on componentDidMount", () => {
   const mockFn = jest.fn();
 
-  TestHelpers.renderWithRouter(<App createIpfsInstance={mockFn} ipfs={mockIpfsState} />);
+  TestHelpers.renderWithRouter(
+    <App createIpfsInstance={mockFn} ipfs={mockIpfsState} />
+  );
   expect(mockFn).toBeCalled();
 });
 
 test("Loading the app indicator gets shown", () => {
-  const mockIpfsState = { connState: "offline" };
+  const mockIpfsState = { connState: "offline", stats: {} };
   const node = TestHelpers.renderWithRouter(
     <App createIpfsInstance={jest.fn()} ipfs={mockIpfsState} />
   );
@@ -31,7 +39,7 @@ test("Loading the app indicator gets shown", () => {
 });
 
 test("Connecting to network indicator gets shown", () => {
-  const mockIpfsState = { connState: "connecting" };
+  const mockIpfsState = { connState: "connecting", stats: {} };
   const node = TestHelpers.renderWithRouter(
     <App createIpfsInstance={jest.fn()} ipfs={mockIpfsState} />
   );
@@ -39,7 +47,7 @@ test("Connecting to network indicator gets shown", () => {
 });
 
 test("Failed to connect error gets shown", () => {
-  const mockIpfsState = { connState: "failed" };
+  const mockIpfsState = { connState: "failed", stats: {} };
   const node = TestHelpers.renderWithRouter(
     <App createIpfsInstance={jest.fn()} ipfs={mockIpfsState} />
   );

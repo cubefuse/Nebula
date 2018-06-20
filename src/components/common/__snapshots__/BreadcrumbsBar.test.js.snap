@@ -1,13 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`can render 1`] = `
+exports[`can render with Router 1`] = `
 Object {
   "container": <div>
     <div
-      class="ant-layout-content"
-      style="padding: 0px 24px; min-height: 280px;"
+      class="ant-breadcrumb"
+      style="margin: 16px 0px;"
     >
-      Download Page Container
+      <span>
+        <span
+          class="ant-breadcrumb-link"
+        >
+          <a
+            href="#/"
+          >
+            Home
+          </a>
+        </span>
+        <span
+          class="ant-breadcrumb-separator"
+        >
+          /
+        </span>
+      </span>
     </div>
   </div>,
   "debug": [Function],

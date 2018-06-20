@@ -1,0 +1,386 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`can render properly with failed state 1`] = `
+Object {
+  "container": <div>
+    <div
+      class="ant-layout-content"
+      style="padding: 0px 24px; min-height: 280px;"
+    >
+      <div
+        class="ant-layout-content"
+        style="text-align: center;"
+      >
+        <h1
+          style="font-size: 10em; margin-bottom: 0px;"
+        >
+          500
+        </h1>
+        <h2
+          style="font-size: xx-large; color: gray;"
+        >
+          Ouch! This application has crashed.
+        </h2>
+        <p>
+          Debug: 
+          Unable to load data for requested path.
+        </p>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`can render properly with loaded state 1`] = `
+Object {
+  "container": <div>
+    <div
+      class="ant-layout-content"
+      style="padding: 0px 24px; min-height: 280px;"
+    >
+      <div
+        class="ant-layout-content"
+      >
+        <div
+          class="ant-layout-sider ant-layout-sider-dark"
+          style="background: rgb(255, 255, 255); max-width: 200px; min-width: 200px; width: 200px;"
+        >
+          <div
+            class="ant-layout-sider-children"
+          >
+            <ul
+              class="ant-tree ant-tree-show-line"
+              role="tree-node"
+              unselectable="on"
+            >
+              <li
+                class=""
+              >
+                <span
+                  class="ant-tree-switcher ant-tree-switcher_open"
+                />
+                <span
+                  class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-open"
+                  title="parent 1"
+                >
+                  <span
+                    class="ant-tree-title"
+                  >
+                    parent 1
+                  </span>
+                </span>
+                <ul
+                  class="ant-tree-child-tree ant-tree-child-tree-open"
+                  data-expanded="true"
+                >
+                  <li
+                    class=""
+                  >
+                    <span
+                      class="ant-tree-switcher ant-tree-switcher_open"
+                    />
+                    <span
+                      class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-open"
+                      title="parent 1-0"
+                    >
+                      <span
+                        class="ant-tree-title"
+                      >
+                        parent 1-0
+                      </span>
+                    </span>
+                    <ul
+                      class="ant-tree-child-tree ant-tree-child-tree-open"
+                      data-expanded="true"
+                    >
+                      <li
+                        class=""
+                      >
+                        <span
+                          class="ant-tree-switcher ant-tree-switcher-noop"
+                        />
+                        <span
+                          class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"
+                          title="leaf"
+                        >
+                          <span
+                            class="ant-tree-title"
+                          >
+                            leaf
+                          </span>
+                        </span>
+                      </li>
+                      <li
+                        class=""
+                      >
+                        <span
+                          class="ant-tree-switcher ant-tree-switcher-noop"
+                        />
+                        <span
+                          class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"
+                          title="leaf"
+                        >
+                          <span
+                            class="ant-tree-title"
+                          >
+                            leaf
+                          </span>
+                        </span>
+                      </li>
+                      <li
+                        class=""
+                      >
+                        <span
+                          class="ant-tree-switcher ant-tree-switcher-noop"
+                        />
+                        <span
+                          class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"
+                          title="leaf"
+                        >
+                          <span
+                            class="ant-tree-title"
+                          >
+                            leaf
+                          </span>
+                        </span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li
+                    class=""
+                  >
+                    <span
+                      class="ant-tree-switcher ant-tree-switcher_open"
+                    />
+                    <span
+                      class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-open"
+                      title="parent 1-1"
+                    >
+                      <span
+                        class="ant-tree-title"
+                      >
+                        parent 1-1
+                      </span>
+                    </span>
+                    <ul
+                      class="ant-tree-child-tree ant-tree-child-tree-open"
+                      data-expanded="true"
+                    >
+                      <li
+                        class=""
+                      >
+                        <span
+                          class="ant-tree-switcher ant-tree-switcher-noop"
+                        />
+                        <span
+                          class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"
+                          title="leaf"
+                        >
+                          <span
+                            class="ant-tree-title"
+                          >
+                            leaf
+                          </span>
+                        </span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li
+                    class=""
+                  >
+                    <span
+                      class="ant-tree-switcher ant-tree-switcher_open"
+                    />
+                    <span
+                      class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-open"
+                      title="parent 1-2"
+                    >
+                      <span
+                        class="ant-tree-title"
+                      >
+                        parent 1-2
+                      </span>
+                    </span>
+                    <ul
+                      class="ant-tree-child-tree ant-tree-child-tree-open"
+                      data-expanded="true"
+                    >
+                      <li
+                        class=""
+                      >
+                        <span
+                          class="ant-tree-switcher ant-tree-switcher-noop"
+                        />
+                        <span
+                          class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"
+                          title="leaf"
+                        >
+                          <span
+                            class="ant-tree-title"
+                          >
+                            leaf
+                          </span>
+                        </span>
+                      </li>
+                      <li
+                        class=""
+                      >
+                        <span
+                          class="ant-tree-switcher ant-tree-switcher-noop"
+                        />
+                        <span
+                          class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"
+                          title="leaf"
+                        >
+                          <span
+                            class="ant-tree-title"
+                          >
+                            leaf
+                          </span>
+                        </span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="ant-layout-content"
+          style="padding: 0px 24px;"
+        >
+          Content
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`can render properly with mock data 1`] = `
+Object {
+  "container": <div>
+    <div
+      class="ant-layout-content"
+      style="padding: 0px 24px; min-height: 280px;"
+    >
+      <div
+        class="ant-layout-content"
+        style="text-align: center;"
+      >
+        <div
+          class="ant-spin ant-spin-lg ant-spin-spinning"
+        >
+          <span
+            class="ant-spin-dot ant-spin-dot-spin"
+          >
+            <i />
+            <i />
+            <i />
+            <i />
+          </span>
+        </div>
+        <h1
+          style="font-size: xx-large; color: gray;"
+        >
+          Loading the requested path
+        </h1>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

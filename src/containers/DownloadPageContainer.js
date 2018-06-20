@@ -1,18 +1,24 @@
-//
-import React from "react";
-import { Layout } from "antd";
+import { connect } from "react-redux";
+import { withRouter } from "react-router-dom";
+import { getPathInfo } from "../redux/ipfs.redux";
+import DownloadPage from "../components/DownloadPage/DownloadPage";
 
-const { Content } = Layout;
-
-/**
- * Download page for single file / folder downloads.
- */
-export default class DownloadPageContainer extends React.Component {
-  render() {
-    return (
-      <Content style={{ padding: "0 24px", minHeight: 280 }}>
-        Download Page Container
-      </Content>
-    );
-  }
+function mapStateToProps(state) {
+  return { ipfs: state.ipfs };
 }
+
+function mapDispatchToProps(dispatch) {
+  return {
+    getPathInfo: path => {
+      dispatch(getPathInfo(path));
+    }
+  };
+}
+
+const DownloadPageContainer = withRouter(
+  connect(
+    mapStateToProps,
+    mapDispatchToProps
+  )(DownloadPage)
+);
+export default DownloadPageContainer;

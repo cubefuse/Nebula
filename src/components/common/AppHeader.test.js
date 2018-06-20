@@ -4,6 +4,8 @@ import { render } from "react-testing-library";
 import AppHeader from "./AppHeader";
 
 test("can render", () => {
-  const node = render(<AppHeader />);
+  const node = render(
+    <AppHeader networkInfo={<span>Test</span>} popover={<span>Test</span>} />
+  );
   expect(node).toMatchSnapshot();
 });
